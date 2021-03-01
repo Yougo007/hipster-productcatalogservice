@@ -23,7 +23,7 @@ steps:
 # Push to GCR
 - name: 'gcr.io/cloud-builders/docker'
   id: 'Pushing productcatalogservice to GCR'
-  args: ['push', 'gcr.io/yougo-projects/hipster-service']
+  args: ['push', 'gcr.io/yougo-projects/hipster-productcatalogservice']
   
 # Deploy frontend image to cloud run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
